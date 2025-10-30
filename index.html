@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thai Currency Guide</title>
+  <style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fdfdfd, #e9f0ff);
+  margin: 0;
+  padding: 40px 10%;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.currency-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.currency-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 90%;
+  max-width: 800px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.currency-card h2 {
+  font-size: 1.6rem;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  perspective: 1000px;
+  margin-bottom: 15px;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s ease;
+}
+
+.images .back {
+  transform: rotateY(180deg);
+}
+
+.currency-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Thai Currency Guide 🇹🇭</h1>
+
+  <div class="currency-container">
+
+    <!-- 20 Baht -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿20 Thai Baht Note</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2019/07/20-thai-baht-banknote-vajiralongkorn-rama-x-obverse-1.jpg" alt="20 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2019/07/20-thai-baht-banknote-vajiralongkorn-rama-x-reverse-1-433x223.jpg" alt="20 Baht Back">
+      </div>
+      <p>The 20 Baht note is green and features King Maha Vajiralongkorn (Rama X) on the front and King Rama I & II on the back.</p>
+    </div>
+
+    <!-- 50 Baht -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿50 Thai Baht Note</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2019/07/50-thai-baht-banknote-vajiralongkorn-rama-x-obverse-1.jpg" alt="50 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2019/07/50-thai-baht-banknote-vajiralongkorn-rama-x-reverse-1.jpg" alt="50 Baht Back">
+      </div>
+      <p>The 50 Baht note is blue and features King Rama X on the front and King Rama III on the back.</p>
+    </div>
+
+    <!-- 100 Baht -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿100 Thai Baht Note</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2019/07/100-thai-baht-banknote-vajiralongkorn-rama-x-obverse-1.jpg" alt="100 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2019/07/100-thai-baht-banknote-vajiralongkorn-rama-x-reverse-1.jpg" alt="100 Baht Back">
+      </div>
+      <p>The 100 Baht note is red and shows King Rama X on the front and King Rama V on the back.</p>
+    </div>
+
+    <!-- 500 Baht -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿500 Thai Baht Note</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2019/07/500-thai-baht-banknote-vajiralongkorn-rama-x-obverse-1.jpg" alt="500 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2019/07/500-thai-baht-banknote-vajiralongkorn-rama-x-reverse-1.jpg" alt="500 Baht Back">
+      </div>
+      <p>The 500 Baht note is purple and shows King Rama X on the front and King Rama VI on the back.</p>
+    </div>
+
+    <!-- 1000 Baht -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿1000 Thai Baht Note</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2019/07/1000-thai-baht-banknote-vajiralongkorn-rama-x-obverse-1.jpg" alt="1000 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2019/07/1000-thai-baht-banknote-vajiralongkorn-rama-x-reverse-1.jpg" alt="1000 Baht Back">
+      </div>
+      <p>The 1000 Baht note is brown and shows King Rama X on the front and King Rama IX on the back.</p>
+    </div>
+
+    <!-- 10 Baht Coin -->
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿10 Thai Baht Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/10-thai-baht-coin-obverse-1.jpg" alt="10 Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/10-thai-baht-coin-reverse-1.jpg" alt="10 Baht Back">
+      </div>
+      <p>The 10 Baht coin is bimetallic, featuring King Rama X on the front and Wat Arun temple on the back.</p>
+    </div>
+
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿5 Thai Baht Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/5-thai-baht-coin-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/5-thai-baht-coin-reverse-1.jpg" alt=" Baht Back">
+      </div>
+      <p>5 Baht</p>
+    </div>
+
+     <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿2 Thai Baht Coin (Silver) </h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-silver-coloured-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-silver-coloured-reverse-1.jpg" alt=" Baht Back">
+      </div>
+      <p>2 Baht Silver</p>
+    </div>
+
+     <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿2 Thai Baht Coin (Golden)</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-gold-coloured-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-gold-coloured-reverse-1.jpg" alt="Baht Back">
+      </div>
+      <p>2 Baht</p>
+    </div>
+
+  <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>฿1 Thai Baht Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/1-thai-baht-coin-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/1-thai-baht-coin-reverse-1.jpg" alt="Baht Back">
+      </div>
+      <p>2 Baht</p>
+    </div>
+
+<div class="currency-card" onclick="toggleInfo(this)">
+      <h2>10 Thai Satang Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/1970/01/10-satang-coin-thailand-obverse.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/1970/01/10-satang-coin-thailand-reverse.jpg" alt="Baht Back">
+      </div>
+      <p></p>
+    </div>
+
+<div class="currency-card" onclick="toggleInfo(this)">
+      <h2>5 Thai Satang Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/1970/01/5-satang-coin-thailand-obverse.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/1970/01/5-satang-coin-thailand-reverse.jpg" alt="Baht Back">
+      </div>
+      <p></p>
+    </div>
+
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>2 Thai Satang Coin (Silver) </h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-silver-coloured-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-silver-coloured-reverse-1.jpg" alt="Baht Back">
+      </div>
+      <p></p>
+    </div>
+
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>2 Thai Satang Coin (Golden)</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-gold-coloured-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/2-thai-baht-coin-gold-coloured-reverse-1.jpg" alt="Baht Back">
+      </div>
+      <p></p>
+    </div>
+
+    <div class="currency-card" onclick="toggleInfo(this)">
+      <h2>1 Thai Satang Coin</h2>
+      <div class="images">
+        <img class="front" src="https://www.leftovercurrency.com/app/uploads/2016/11/1-thai-baht-coin-obverse-1.jpg" alt=" Baht Front">
+        <img class="back" src="https://www.leftovercurrency.com/app/uploads/2016/11/1-thai-baht-coin-reverse-1.jpg" alt="Baht Back">
+      </div>
+      <p></p>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleInfo(card) {
+      const front = card.querySelector('.front');
+      const back = card.querySelector('.back');
+      const flipped = card.classList.toggle('flipped');
+      if (flipped) {
+        front.style.transform = "rotateY(180deg)";
+        back.style.transform = "rotateY(0)";
+      } else {
+        front.style.transform = "rotateY(0)";
+        back.style.transform = "rotateY(-180deg)";
+      }
+    }
+
+       // Simple INR → THB converter
+    function convertToBaht() {
+      const inrValue = parseFloat(document.getElementById("inr").value);
+      const rate = 0.44; // Example rate (1 INR ≈ 0.44 THB)
+      if (isNaN(inrValue) || inrValue <= 0) {
+        document.getElementById("result").innerText = "Enter a valid INR amount.";
+        return;
+      }
+      const baht = (inrValue * rate).toFixed(2);
+      document.getElementById("result").innerText = `${inrValue} INR = ฿${baht} Thai Baht`;
+    }
+  </script>
+
+</body>
+</html>
